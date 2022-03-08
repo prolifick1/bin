@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pushd ~/temp; \
+mkdir pl-temp; \
+pushd pl-temp; \
+yt-dlp --continue --no-post-overwrites -f mp4 $1 ; \
+open . ;

@@ -1,0 +1,7 @@
+#! /usr/local/bin/bash
+
+
+pushd ~/temp; \
+yt-dlp -f mp4 $1 -o temp.mp4; \
+mpv temp.mp4; \
+rm -v temp.mp4; 

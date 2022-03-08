@@ -1,0 +1,6 @@
+#!/usr/local/bin/bash
+
+pushd ~/temp;
+ipfs get $1 -o temp.pdf;
+open temp.pdf;
+rm -i temp.pdf;

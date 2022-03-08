@@ -1,0 +1,6 @@
+#! /usr/local/bin/bash
+
+pushd ~/temp; \
+yt-dlp -x --audio-format mp3 $1 -o temp.mp3; \
+mpv temp.mp3; \
+rm -v temp.mp3;
